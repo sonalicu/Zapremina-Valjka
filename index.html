@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head> 
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <title>Cylinder volume calculator</title>
+
+            <script type ="text/javascript">
+				function calc() {
+					var r = (document.getElementById("poluprecnik").value)
+					var h = (document.getElementById("visina").value)
+					var pi = 3.14;
+					var rezultat = document.getElementById("rezultat").value = r*r*pi*h;
+				    }
+					
+					//var side = prompt ("Ukucaj poluprečnik i visinu valjka", 2);
+					
+					
+					
+				
+            </script>
+            <style>
+            </style>
+        </head>
+
+        <body>
+       
+            <h1>Izračunavanje zapremine valjka</h1>
+            <form>
+
+            
+            <strong>r</strong> -poluprečnik osnove valjka: <input type="text" id="poluprecnik" maxlength="7"> 
+            <br> <br>
+            <strong>H</strong> -visina: <input type="text" id="visina" maxlength="7">
+            <br><br>
+            <strong>π</strong> - Pi - konstanta, približno 3,14 
+            <br> <br>
+            <strong>V=r<sup>2</sup>*π*H</strong>
+            <br><br>
+            <strong>V=</strong> <input type="text" id="rezultat" maxlength="7">
+            <br><br>
+           	<input type="button" value="Izračunaj" onclick="calc();">
+			<br><br>
+			<img src="zapremina-valjka-foto.png" alt="foto-valjak">
+				
+
+            </form>
+           
+
+           
+           
+
+
+
+
+        </body>
+
+
+
+
+
+
+
+
+
+</html>
